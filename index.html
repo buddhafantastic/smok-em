@@ -9,18 +9,20 @@
                 background: white;
                 width: 40vw;
                 height: 80vh;
+                max-height: 80vh;
+                overflow: hidden;
                 display: flex;
                 flex-direction: column;
                 margin: 10px auto;
 
                 .ash {
                     background: grey;
-                    flex-grow: 1;
+                    flex-grow: .1;
                 }
 
                 .fire {
                     background: grey;
-                    height: 2vh;
+                    height: 1vh;
                 }
 
                 .paper {
@@ -30,12 +32,13 @@
 
                 .filter {
                     background: orange;
-                    height: 10vh;
+                    height: 25vh;
                 }
 
                 &.lit {
                     .fire {
                         background: orangered;
+                        min-height: 2vh;
                     }
                 }
             }
